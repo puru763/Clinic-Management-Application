@@ -7,13 +7,14 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class DoctorServiceImpl implements DoctorService {
+
     @Override
-    public DoctorDto doctorSignUp(DoctorDto doctorSignUpRequest) {
+    public DoctorDto DoctorSignIn(DoctorDto doctorSignInRequest) {
         return null;
     }
 
     @Override
-    public DoctorDto doctorSignIn(DoctorDto doctorSignInRequest) {
+    public DoctorDto DoctorSignUp(DoctorDto doctorSignUpRequest) {
         return null;
     }
 }

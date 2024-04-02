@@ -1,4 +1,4 @@
 package com.ClinicManagementSystem.Authentication.dto;
 
-public class UserDto {
+public class PatientDto {
 }

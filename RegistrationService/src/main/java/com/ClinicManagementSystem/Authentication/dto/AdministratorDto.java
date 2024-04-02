@@ -1,4 +1,4 @@
-package com.ClinicManagementSystem.RegistrationService.dto;
+package com.ClinicManagementSystem.Authentication.dto;
 
-public class AdminDto {
+public class AdministratorDto {
 }

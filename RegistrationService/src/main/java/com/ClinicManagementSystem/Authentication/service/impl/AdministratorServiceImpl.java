@@ -7,8 +7,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AdministratorServiceImpl implements AdministratorService {
+
     @Override
-    public AdministratorDto adminSignIn(AdministratorDto adminSignInRequest) {
+    public AdministratorDto administratorsignup(AdministratorDto adminSignInRequest) {
         return null;
     }
 }

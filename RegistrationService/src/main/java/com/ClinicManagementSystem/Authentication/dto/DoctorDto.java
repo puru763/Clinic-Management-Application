@@ -1,2 +1,4 @@
-package com.ClinicManagementSystem.Authentication.dto;public class DoctorDto {
+package com.ClinicManagementSystem.Authentication.dto;
+
+public class DoctorDto {
 }

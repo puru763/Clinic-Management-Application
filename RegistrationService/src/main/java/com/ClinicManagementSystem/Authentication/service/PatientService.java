@@ -1,11 +1,12 @@
 package com.ClinicManagementSystem.Authentication.service;
 
-import com.ClinicManagementSystem.Authentication.dto.UserDto;
+import com.ClinicManagementSystem.Authentication.dto.PatientDto;
 
-public interface UserService {
+public interface PatientService {
 
-      UserDto signup(UserDto signUpRequest);
 
-     UserDto signin(UserDto signUpRequest) ;
 
+    PatientDto PatientSignIn(PatientDto patientSignInRequest);
+
+    PatientDto PatientSignUp(PatientDto patientSignUnRequest);
 }

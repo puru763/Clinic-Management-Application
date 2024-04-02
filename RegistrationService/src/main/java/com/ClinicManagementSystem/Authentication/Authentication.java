@@ -1,13 +1,13 @@
-package com.ClinicManagementSystem.PatientRegistrationService;
+package com.ClinicManagementSystem.Authentication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PatientRegistrationServiceApplication {
+public class Authentication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PatientRegistrationServiceApplication.class, args);
+		SpringApplication.run(Authentication.class, args);
 	}
 
 }
