@@ -1,2 +1,4 @@
-package com.ClinicManagementSystem.Authentication.config;public class PatientConfig {
+package com.ClinicManagementSystem.Authentication.config;
+
+public class PatientConfig {
 }
