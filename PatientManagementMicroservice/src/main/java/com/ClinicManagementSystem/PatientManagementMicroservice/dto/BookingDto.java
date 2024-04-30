@@ -1,7 +1,6 @@
 package com.ClinicManagementSystem.PatientManagementMicroservice.dto;
 
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,10 +12,13 @@ import java.math.BigDecimal;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PatientDto {
-        private Long patientId;
-        private String patientName;
-        private String mobileNumber;
-        private String email;
+public class BookingDto {
+    private Long bookingId;
+    private Long patientId;
+    private String doctorName;
+    private String appointmentDate;
+    private String appointmentTime;
+    private String venue;
+    private String diagnosis;
 
 }
