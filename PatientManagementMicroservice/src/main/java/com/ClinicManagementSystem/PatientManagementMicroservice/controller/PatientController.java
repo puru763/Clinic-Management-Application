@@ -1,6 +1,7 @@
 package com.ClinicManagementSystem.PatientManagementMicroservice.controller;
 
 import com.ClinicManagementSystem.PatientManagementMicroservice.dto.PatientAppointmentDto;
+import com.ClinicManagementSystem.PatientManagementMicroservice.entity.Patient;
 import com.ClinicManagementSystem.PatientManagementMicroservice.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,6 +15,12 @@ public class PatientController {
     @Autowired
     private PatientService patientService;
 
+     @PostMapping("/register-patient")
+    public ResponseEntity<Patient> registerPatient(@RequestBody Patient patientRegistrationRequest) {
+         Patient patientRegistration = patientService.registerPatient(patientRegistrationRequest);
+        return ResponseEntity.ok(patientRegistration);
+    }
+
     @PostMapping("/book-appointment")
     public ResponseEntity<PatientAppointmentDto> bookAppointment(@RequestBody PatientAppointmentDto bookingRequest) {
         PatientAppointmentDto booking = patientService.bookAppointment(bookingRequest);
@@ -26,9 +33,7 @@ public class PatientController {
         return ResponseEntity.ok(booking);
     }
 
-
-
-    @GetMapping("/watch-appointments")
+    @GetMapping("/my-appointments")
     public ResponseEntity<PatientAppointmentDto> getPatientAppointmentDetails(@PathVariable Long appointmentId) {
         PatientAppointmentDto patientAppointment = patientService.getPatientAppointmentDetails(appointmentId);
         return ResponseEntity.ok(patientAppointment);
@@ -40,24 +45,3 @@ public class PatientController {
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Appointment has been deleted");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,6 +1,7 @@
 package com.ClinicManagementSystem.PatientManagementMicroservice.service;
 
 import com.ClinicManagementSystem.PatientManagementMicroservice.dto.PatientAppointmentDto;
+import com.ClinicManagementSystem.PatientManagementMicroservice.entity.Patient;
 
 public interface PatientService {
 
@@ -13,4 +14,6 @@ public interface PatientService {
     PatientAppointmentDto getPatientAppointmentDetails(Long appointmentId);
 
     void deleteAppointment(Long appointmentId);
+
+    Patient registerPatient(Patient patientRegistrationRequest);
 }
