@@ -1,0 +1,2 @@
+package com.ClinicManagementSystem.PatientManagementMicroservice.repository;public interface AppointmentRepository {
+}
