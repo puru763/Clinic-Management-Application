@@ -2,17 +2,9 @@ package com.ClinicManagementSystem.PatientManagementMicroservice.repository;
 
 import com.ClinicManagementSystem.PatientManagementMicroservice.entity.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.Optional;
-
-public interface PatientRepository extends JpaRepository<Patient, Long> {
+import org.springframework.stereotype.Repository;
 
 
-
-    Optional<Patient> findById(Long id);
-
-
+@Repository
+public interface PatientRepository extends JpaRepository<Patient , Long> {
 }
-
-
-

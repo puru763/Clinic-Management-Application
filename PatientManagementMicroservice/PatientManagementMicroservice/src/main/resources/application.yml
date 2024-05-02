@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: PatientManagementMicroservice
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/Patient
+    username: root
+    password: Krishnani@7634
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # Optional: Additional settings for HikariCP, the default connection pool in Spring Boot
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 600000
+      pool-name: HikariPool-1
+
+  jpa:
+    hibernate:
+      ddl-auto: update # 'update', 'create-drop', 'validate', 'none', etc.
+    show-sql: true # Set to 'false' to disable SQL output in the console
+    dialect: org.hibernate.dialect.MySQL8Dialect # Change depending on your MySQL version
+
+# Optional: Set a server port for the application
+server:
+  port: 8082 # Or any other port you prefer

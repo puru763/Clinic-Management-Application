@@ -1,12 +1,12 @@
 package com.ClinicManagementSystem.PatientManagementMicroservice.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import org.springframework.data.annotation.Id;
-
-
-@Data
+import lombok.*;
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,14 +17,12 @@ public class Appointment {
     private Patient patient;
 
     private String doctorName;
-
     private String appointmentDate;
-
     private String appointmentTime;
-
     private String venue;
-
     private String diagnosis;
 
+    public Long getPatientId() {
+        return patient.getId();
+    }
 }
-
