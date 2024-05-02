@@ -2,27 +2,20 @@ package com.ClinicManagementSystem.PatientManagementMicroservice.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.Date;
+
 @Entity
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Data
 public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @ManyToOne
-    @JoinColumn(name = "patient_id")
-    private Patient patient;
-
-    private String doctorName;
-    private String appointmentDate;
+    private Date appointmentDate;
     private String appointmentTime;
-    private String venue;
-    private String diagnosis;
+    private String appointmentDescription;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
-    public Long getPatientId() {
-        return patient.getId();
-    }
 }
