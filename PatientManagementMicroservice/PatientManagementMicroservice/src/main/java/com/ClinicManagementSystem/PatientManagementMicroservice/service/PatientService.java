@@ -1,13 +1,12 @@
 package com.ClinicManagementSystem.PatientManagementMicroservice.service;
 
-import com.ClinicManagementSystem.PatientManagementMicroservice.dto.UserDTO;
+import com.ClinicManagementSystem.PatientManagementMicroservice.dto.PatientDTO;
+import com.ClinicManagementSystem.PatientManagementMicroservice.entity.Patient;
 
 import java.util.List;
 
-public interface UserService {
-    UserDTO registerUser(UserDTO userDTO);
-    UserDTO getUserById(Long id);
-    UserDTO updateUser(UserDTO userDTO);
-    void deleteUser(Long id);
-    List<UserDTO> getAllUsers();
+public interface PatientService {
+
+
+    Patient RegisterPatient(Patient patient);
 }

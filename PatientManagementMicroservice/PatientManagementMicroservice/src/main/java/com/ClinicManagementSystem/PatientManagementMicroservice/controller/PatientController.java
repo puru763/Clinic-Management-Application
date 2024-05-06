@@ -1,25 +1,38 @@
 package com.ClinicManagementSystem.PatientManagementMicroservice.controller;
 
 
-import com.ClinicManagementSystem.PatientManagementMicroservice.dto.UserDTO;
-import com.ClinicManagementSystem.PatientManagementMicroservice.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ClinicManagementSystem.PatientManagementMicroservice.dto.PatientDTO;
+import com.ClinicManagementSystem.PatientManagementMicroservice.entity.Patient;
+import com.ClinicManagementSystem.PatientManagementMicroservice.service.PatientService;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RequestMapping("api/v1/user")
 @RestController
-public class UserController {
+public class PatientController {
+
+private  final PatientService patientService;
+
+    public PatientController(PatientService patientService) {
+        this.patientService = patientService;
+    }
 
 
 
-//    @PostMapping
-//    @ResponseStatus(HttpStatus.CREATED)
-//    public  void createProduct(@RequestBody ProductRequest productRequest){
-//        productService.createProduct(productRequest);
-//    }
+    @PostMapping("/register-user")
+    @ResponseStatus(HttpStatus.CREATED)
+    public PatientDTO RegisterPatient(@RequestBody Patient patient){
+        Patient createdPatient = patientService.RegisterPatient(patient);
+        return new Patient(createdPatient);
+    }
+
+    @PostMapping("/book-appoiment")
+    @ResponseStatus(HttpStatus.CREATED)
+    public AppoimentDto RegisterPatient(@RequestBody Appointment Appointment){
+        Appointment createdAppointment = patientService.RegisterPatient(patient);
+        return new Patient(createdPatient);
+    }
+
+
 
 }

@@ -6,6 +6,10 @@ import lombok.*;
 import java.util.Date;
 
 @Entity
+@Table(name = "appointments")
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Data
 public class Appointment {
     @Id
@@ -15,7 +19,7 @@ public class Appointment {
     private String appointmentTime;
     private String appointmentDescription;
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    @JoinColumn(name = "patient_id")
+    private Patient patient;
 
 }
