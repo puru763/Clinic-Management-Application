@@ -17,7 +17,11 @@ private  final PatientService patientService;
         this.patientService = patientService;
     }
 
+    //user login
 
+
+
+    //user register 
 
     @PostMapping("/register-user")
     @ResponseStatus(HttpStatus.CREATED)
@@ -26,12 +30,17 @@ private  final PatientService patientService;
         return new Patient(createdPatient);
     }
 
+    //booking appoiment 
+
     @PostMapping("/book-appoiment")
     @ResponseStatus(HttpStatus.CREATED)
     public AppoimentDto RegisterPatient(@RequestBody Appointment Appointment){
         Appointment createdAppointment = patientService.RegisterPatient(patient);
         return new Patient(createdPatient);
     }
+
+
+  
 
 
 
