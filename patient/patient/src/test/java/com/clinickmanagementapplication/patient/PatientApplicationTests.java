@@ -1,10 +1,10 @@
-package com.ClinicManagementSystem.PatientManagementMicroservice;
+package com.clinickmanagementapplication.patient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PatientManagementMicroserviceApplicationTests {
+class PatientApplicationTests {
 
 	@Test
 	void contextLoads() {

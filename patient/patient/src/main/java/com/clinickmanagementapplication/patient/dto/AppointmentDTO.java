@@ -1,4 +1,7 @@
 package com.clinickmanagementapplication.patient.dto;
 
-public class AppoimentDTO {
+public class AppointmentDTO {
+
+
+
 }

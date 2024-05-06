@@ -4,52 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="819cf555-88ff-4ab0-b527-fa7f148cd79e" name="Changes" comment="">
+    <list default="true" id="fd512cea-5907-4af7-b906-53f162b05fa9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Clinic-Management-Application.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/controller/PatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/dto/AppointmentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/dto/PatientDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/entity/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/entity/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/repository/PatientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/clinick.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/.idea/ClinicAdministrationMicroservice.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/ClinicAdministrationMicroserviceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/config/AdministrationConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/controller/AdministratorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/controller/DoctorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/controller/PatientController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/dto/AdministratorDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/dto/DoctorDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/dto/PatientDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/entity/AdministratorEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/entity/DoctorEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/entity/PatientEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/repository/AdministratorRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/repository/DoctorRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/repository/PatientRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/service/AdministratorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/service/DoctorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/service/PatientService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/service/impl/AdministratorServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/service/impl/DoctorServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/service/impl/PatientServicceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/main/resources/application.property" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicAdministrationMicroservice/ClinicAdministrationMicroservice/src/test/java/com/ClinicManagementSystem/ClinicAdministrationMicroservice/ClinicAdministrationMicroserviceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoctorManagementMicroservice/src/main/java/com/ClinicManagementSystem/DoctorManagementMicroservice/DoctorManagementMicroserviceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoctorManagementMicroservice/src/main/java/com/ClinicManagementSystem/DoctorManagementMicroservice/config/DoctorConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoctorManagementMicroservice/src/main/java/com/ClinicManagementSystem/DoctorManagementMicroservice/controller/DoctorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoctorManagementMicroservice/src/main/java/com/ClinicManagementSystem/DoctorManagementMicroservice/dto/DoctorDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoctorManagementMicroservice/src/main/java/com/ClinicManagementSystem/DoctorManagementMicroservice/entity/DoctorEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoctorManagementMicroservice/src/main/java/com/ClinicManagementSystem/DoctorManagementMicroservice/repository/DoctorRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoctorManagementMicroservice/src/main/java/com/ClinicManagementSystem/DoctorManagementMicroservice/service/DoctorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoctorManagementMicroservice/src/main/java/com/ClinicManagementSystem/DoctorManagementMicroservice/service/DoctorServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoctorManagementMicroservice/src/main/resources/application.property" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/PatientManagementMicroservice-1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/PatientManagementMicroserviceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/controller/PatientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/dto/AppointmentDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/dto/PatientDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/entity/Appointment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/entity/Patient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/repository/PatientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/service/PatientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/service/PatientServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/test/java/com/ClinicManagementSystem/PatientManagementMicroservice/PatientManagementMicroserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +57,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,31 +67,35 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2fshLHDd565wWbdn4qRUAZ3scnc" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2g6qUOmCLMbAOH2XCCEAFM54Vnt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.PatientManagementMicroserviceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PatientManagementMicroservice [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PatientManagementMicroservice [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/krish/Desktop/clinick/ClinicAdministrationMicroservice&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.PatientApplication.executor": "Run",
+    "Maven.patient [install].executor": "Run",
+    "Maven.patient [spring-boot:run].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean" />
       <command value="mvn install" />
+      <command value="mvn spring-boot:run" />
     </option>
   </component>
   <component name="SharedIndexes">
@@ -106,12 +108,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="819cf555-88ff-4ab0-b527-fa7f148cd79e" name="Changes" comment="" />
-      <created>1714595635751</created>
+      <changelist id="fd512cea-5907-4af7-b906-53f162b05fa9" name="Changes" comment="" />
+      <created>1715028393730</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714595635751</updated>
+      <updated>1715028393730</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
