@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd512cea-5907-4af7-b906-53f162b05fa9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Clinic-Management-Application.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/controller/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/dto/AppointmentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/dto/PatientDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/entity/Appointment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/entity/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/repository/PatientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/PatientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/clinick.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/PatientManagementMicroservice-1.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/compiler.xml" beforeDir="false" />
@@ -29,12 +22,12 @@
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/PatientManagementMicroserviceApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/controller/PatientController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/dto/AppointmentDTO.java" beforeDir="false" />
@@ -45,8 +38,16 @@
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/service/PatientService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/java/com/ClinicManagementSystem/PatientManagementMicroservice/service/PatientServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/test/java/com/ClinicManagementSystem/PatientManagementMicroservice/PatientManagementMicroserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientManagementMicroservice/PatientManagementMicroservice/src/test/java/com/ClinicManagementSystem/PatientManagementMicroservice/PatientManagementMicroserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/test/java/com/clinickmanagementapplication/patient/PatientApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/dto/AppointmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/dto/AppointmentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/dto/PatientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/dto/PatientDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/entity/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/entity/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/entity/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
