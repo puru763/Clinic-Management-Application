@@ -1,4 +1,4 @@
-package com.clinickmanagement.patient;
+package com.clinickmanagementapplication.patient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -16,9 +16,6 @@
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
-  <component name="ProjectResources">
-    <resource url="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" location="$USER_HOME$/.jdks/openjdk-20.0.2!/java.xml.crypto/com/sun/org/apache/xml/internal/security/resource/config.dtd" />
-  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_20" default="true" project-jdk-name="openjdk-20" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

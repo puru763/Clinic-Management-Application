@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.clinickmanagementapplication.patient.exception;
 
 public class PatientAlreadyRegisteredException extends RuntimeException {
@@ -5,3 +6,7 @@ public class PatientAlreadyRegisteredException extends RuntimeException {
         super(message);
     }
 }
+=======
+package com.clinickmanagementapplication.patient.exception;public class PatientAlreadyRegisteredException {
+}
+>>>>>>> parent of b7dbe10 (.)

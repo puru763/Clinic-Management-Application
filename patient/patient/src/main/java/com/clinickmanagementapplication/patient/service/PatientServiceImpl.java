@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.clinickmanagementapplication.patient.service;
 
 import com.clinickmanagementapplication.patient.entity.Patient;
@@ -38,3 +39,7 @@ public class PatientServiceImpl implements PatientService {
 }
 
 
+=======
+package com.clinickmanagementapplication.patient.service;public class PatientServiceImpl {
+}
+>>>>>>> parent of b7dbe10 (.)
