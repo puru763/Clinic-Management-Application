@@ -1,2 +1,4 @@
-package com.clinickmanagementapplication.administrator.service;public interface AdministratorService {
+package com.clinickmanagementapplication.administrator.service;
+
+public interface AdministratorService {
 }
