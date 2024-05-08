@@ -5,8 +5,13 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/patient/patient/pom.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/doctor/pom.xml" />
         <option value="$PROJECT_DIR$/administrator/pom.xml" />
+=======
+        <option value="$PROJECT_DIR$/administrator/pom.xml" />
+        <option value="$PROJECT_DIR$/doctor/pom.xml" />
+>>>>>>> 6bfd259cffbf0eb3e99a437284478bc87ef3a6f4
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

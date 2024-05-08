@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fd512cea-5907-4af7-b906-53f162b05fa9" name="Changes" comment=".">
+=======
+    <list default="true" id="fd512cea-5907-4af7-b906-53f162b05fa9" name="Changes" comment="">
+>>>>>>> 6bfd259cffbf0eb3e99a437284478bc87ef3a6f4
       <change afterPath="$PROJECT_DIR$/administrator/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/administrator/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/administrator/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
@@ -12,11 +16,15 @@
       <change afterPath="$PROJECT_DIR$/administrator/mvnw.cmd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/administrator/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/administrator/src/main/java/com/clinickmanagementapplication/administrator/AdministratorApplication.java" afterDir="false" />
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/administrator/src/main/java/com/clinickmanagementapplication/administrator/controller/AdministratorController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/administrator/src/main/java/com/clinickmanagementapplication/administrator/repository/AdministratorRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/administrator/src/main/java/com/clinickmanagementapplication/administrator/service/AdministratorService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/administrator/src/main/java/com/clinickmanagementapplication/administrator/service/AdministratorServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/administrator/src/main/resources/application.yml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/administrator/src/main/resources/application.properties" afterDir="false" />
+>>>>>>> 6bfd259cffbf0eb3e99a437284478bc87ef3a6f4
       <change afterPath="$PROJECT_DIR$/administrator/src/test/java/com/clinickmanagementapplication/administrator/AdministratorApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/doctor/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/doctor/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
@@ -25,19 +33,32 @@
       <change afterPath="$PROJECT_DIR$/doctor/mvnw.cmd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/doctor/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/doctor/src/main/java/com/clinickmanagementapplication/doctor/DoctorApplication.java" afterDir="false" />
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/doctor/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/doctor/src/test/java/com/clinickmanagementapplication/doctor/DoctorApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagement/patient/entity/Appointment.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagement/patient/repository/AppointmentRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagement/patient/service/AppointmentService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagement/patient/service/AppointmentServiceImpl.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/doctor/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor/src/test/java/com/clinickmanagementapplication/doctor/DoctorApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/exception/PatientAlreadyRegisteredException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/exception/PatientException.java" afterDir="false" />
+>>>>>>> 6bfd259cffbf0eb3e99a437284478bc87ef3a6f4
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagement/patient/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagement/patient/controller/PatientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagement/patient/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagement/patient/entity/Patient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagement/patient/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagement/patient/service/PatientServiceImpl.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/patient/src/main/java/com/clinickmanagementapplication/patient/service/PatientServiceImpl.java" afterDir="false" />
+>>>>>>> 6bfd259cffbf0eb3e99a437284478bc87ef3a6f4
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +79,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -65,6 +87,8 @@
       </MavenGeneralSettings>
     </option>
   </component>
+=======
+>>>>>>> 6bfd259cffbf0eb3e99a437284478bc87ef3a6f4
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -91,8 +115,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/krish/Desktop/new projects/Clinic-Management-Application/administrator",
     "settings.editor.selected.configurable": "preferences.externalResources"
+=======
+    "last_opened_file_path": "C:/Users/krish/Desktop/new projects/Clinic-Management-Application/doctor"
+>>>>>>> 6bfd259cffbf0eb3e99a437284478bc87ef3a6f4
   }
 }]]></component>
   <component name="RunAnythingCache">
