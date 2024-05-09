@@ -1,2 +1,4 @@
-package com.ClinicManagementApplication.doctorservice.repository;public class DoctorRepository {
+package com.ClinicManagementApplication.doctorservice.repository;
+
+public class DoctorRepository {
 }

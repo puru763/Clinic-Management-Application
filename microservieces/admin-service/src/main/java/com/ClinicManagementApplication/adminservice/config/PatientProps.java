@@ -1,2 +1,13 @@
-package com.ClinicManagementApplication.adminservice.config;public class PatientProps {
+package com.ClinicManagementApplication.adminservice.config;
+
+
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ConfigurationProperties
+@Data
+public class PatientProps {
+    private String baseurl;
 }

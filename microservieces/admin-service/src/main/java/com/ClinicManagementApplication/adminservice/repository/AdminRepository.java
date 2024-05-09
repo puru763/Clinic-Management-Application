@@ -1,2 +1,4 @@
-package com.ClinicManagementApplication.adminservice.repository;public class AdminRepository {
+package com.ClinicManagementApplication.adminservice.repository;
+
+public class AdminRepository {
 }

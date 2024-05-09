@@ -1,2 +1,4 @@
-package com.ClinicManagementApplication.doctorservice.entity;public class DoctorEntity {
+package com.ClinicManagementApplication.doctorservice.entity;
+
+public class DoctorEntity {
 }

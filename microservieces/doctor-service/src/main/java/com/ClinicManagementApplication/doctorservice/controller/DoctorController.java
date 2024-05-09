@@ -1,2 +1,4 @@
-package com.ClinicManagementApplication.doctorservice.controller;public class DoctorController {
+package com.ClinicManagementApplication.doctorservice.controller;
+
+public class DoctorController {
 }

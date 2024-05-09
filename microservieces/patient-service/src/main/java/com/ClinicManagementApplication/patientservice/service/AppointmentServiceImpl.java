@@ -30,13 +30,10 @@ public class AppointmentServiceImpl implements AppointmentService {
                 LOGGER.error("Patient not found for ID: " + patientId);
                 return null;
             }
-
             Patient patient = existingPatient.get();
             appointment.setPatient(patient);
             patient.getAppointments().add(appointment);
-
             Appointment bookedAppointment = appointmentRepository.save(appointment);
-
             return bookedAppointment;
         } catch (Exception e) {
             LOGGER.error("Error booking appointment: " + e.getMessage());

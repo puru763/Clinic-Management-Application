@@ -10,28 +10,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/patient")
 public class PatientController {
-
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PatientController.class);
 
     @Autowired
     private PatientService patientService;
 
-
     @Autowired
     private AppointmentService appointmentService;
 
-
     @PostMapping("/register-patient")
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<?>registerPatient(@RequestBody Patient patient){
+    public ResponseEntity<?> registerPatient(@RequestBody Patient patient) {
         try {
-            Patient registerPatient= patientService.registerPatient(patient);
-            if(registerPatient != null) {
+            Patient registerPatient = patientService.registerPatient(patient);
+            if (registerPatient != null) {
                 return ResponseEntity.status(HttpStatus.CREATED).body(registerPatient);
             } else {
                 return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body("Patient  With This Mobile Number Is  Already Exist Please Try  With Differnt Mobile Number");
@@ -56,4 +54,20 @@ public class PatientController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An error occurred while booking the appointment.");
         }
     }
+
+    @GetMapping("/{patientId}/appointments")
+    public ResponseEntity<?> getPatientAppointments(@PathVariable Long patientId) {
+        try {
+            List<Appointment> appointments = patientService.getAppointmentsForPatient(patientId);
+            if (appointments.isEmpty()) {
+                return ResponseEntity.status(404).body("No appointments found for this patient");
+            } else {
+                return ResponseEntity.ok(appointments);
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("An error occurred while fetching appointments");
+        }
+    }
 }
+
+
