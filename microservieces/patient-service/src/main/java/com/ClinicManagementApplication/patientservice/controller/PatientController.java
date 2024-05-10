@@ -1,5 +1,7 @@
 package com.ClinicManagementApplication.patientservice.controller;
 
+import com.ClinicManagementApplication.patientservice.dto.AppointmentDTO;
+import com.ClinicManagementApplication.patientservice.dto.PatientDTO;
 import com.ClinicManagementApplication.patientservice.entity.Appointment;
 import com.ClinicManagementApplication.patientservice.entity.Patient;
 import com.ClinicManagementApplication.patientservice.service.AppointmentService;
@@ -11,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("api/v1/patient")
@@ -68,6 +71,65 @@ public class PatientController {
             return ResponseEntity.status(500).body("An error occurred while fetching appointments");
         }
     }
-}
+
+
+
+    @GetMapping("/patients")
+    public ResponseEntity<List<PatientDTO>> getAllPatients() {
+        try {
+            List<PatientDTO> patients = patientService.getAllPatients();
+            return ResponseEntity.ok(patients);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
+    @GetMapping("/appointments")
+    public ResponseEntity<List<AppointmentDTO>> getAllAppointments() {
+        try {
+            List<AppointmentDTO> appointments = appointmentService.getAllAppointments();
+            return ResponseEntity.ok(appointments);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
+    @GetMapping("/appointments/{appointmentId}")
+    public ResponseEntity<Optional<AppointmentDTO>> getAppointmentByAppointmentId(@PathVariable Long appointmentId) {
+        try {
+            Optional<AppointmentDTO> appointment = appointmentService.getAppointmentByAppointmentId(appointmentId);
+            if (appointment != null) {
+                return ResponseEntity.ok(appointment);
+            } else {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
+    @GetMapping("/patients/{patientId}")
+    public ResponseEntity<PatientDTO> getPatientByPatientId(@PathVariable Long patientId) {
+        try {
+            PatientDTO patient = patientService.getPatientByPatientId(patientId);
+            if (patient != null) {
+                return ResponseEntity.ok(patient);
+            } else {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
+
+
+    }
+
+
+
+
+
+
 
 

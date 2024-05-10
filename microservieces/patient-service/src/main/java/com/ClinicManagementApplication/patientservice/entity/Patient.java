@@ -37,4 +37,8 @@ public class Patient {
         Long generatedId = Long.valueOf(timestamp * 1000000 + randomNumber);
         this.patientId = generatedId;
     }
+
+    public Long patientId() {
+        return patientId;
+    }
 }

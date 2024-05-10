@@ -1,46 +1,77 @@
 package com.ClinicManagementApplication.adminservice.controller;
 
-import com.ClinicManagementApplication.patientservice.entity.Patient;
+import com.ClinicManagementApplication.adminservice.dto.AppointmentDTO;
+import com.ClinicManagementApplication.adminservice.dto.PatientDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.reactive.function.client.WebClient;
-import org.springframework.web.reactive.function.client.WebClientResponseException;
-import reactor.core.publisher.Mono;
+import org.springframework.web.client.RestTemplate;
 
-import java.util.Collections;
 import java.util.List;
 
 @RestController
+@RequestMapping("/admin")
 public class AdminController {
 
-    private final WebClient webClient;
-
     @Autowired
-    public AdminController(WebClient.Builder webClientBuilder) {
-        this.webClient = webClientBuilder.baseUrl("http://patient-service-url").build();
-    }
+    private RestTemplate restTemplate;
+
+    @Value("${patient.service.url}")
+    private String patientServiceUrl;
+
+
 
     @GetMapping("/get-all-patients")
-    public Mono<ResponseEntity<List<Patient>>> getAllPatientsFromPatientService() {
-        return webClient.get()
-                .uri("/get-all-patients")
-                .retrieve()
-                .bodyToFlux(Patient.class)
-                .collectList()
-                .map(patients -> ResponseEntity.ok().body(patients))
-                .onErrorResume(WebClientResponseException.class, ex -> handleWebClientResponseException(ex));
+    public List<PatientDTO> getAllPatients() {
+        ResponseEntity<List<PatientDTO>> response = restTemplate.exchange(
+                "http://localhost:8080/patient-service/patients",
+                HttpMethod.GET,
+                null,
+                new ParameterizedTypeReference<List<PatientDTO>>() {}
+        );
+
+        return response.getBody();
     }
 
-    private Mono<ResponseEntity<List<Patient>>> handleWebClientResponseException(WebClientResponseException ex) {
-        HttpStatus errorStatus = (HttpStatus) ex.getStatusCode();
-        if (errorStatus.is4xxClientError()) {
-            return Mono.just(ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Collections.emptyList()));
-        } else if (errorStatus.is5xxServerError()) {
-            return Mono.just(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Collections.emptyList()));
-        }
-        return Mono.error(ex);
+    @GetMapping("/get-all-appointments")
+    public List<AppointmentDTO> getAllAppointments() {
+        ResponseEntity<List<AppointmentDTO>> response = restTemplate.exchange(
+                "http://localhost:8080/patient-service/appointments",
+                HttpMethod.GET,
+                null,
+                new ParameterizedTypeReference<List<AppointmentDTO>>() {}
+        );
+
+        return response.getBody();
+    }
+
+    @GetMapping("/get-appointment-by-appointmentid/{appointmentId}")
+    public AppointmentDTO getAppointmentByAppointmentId(@PathVariable Long appointmentId) {
+        ResponseEntity<AppointmentDTO> response = restTemplate.exchange(
+                "http://localhost:8080/patient-service/appointments/" + appointmentId,
+                HttpMethod.GET,
+                null,
+                AppointmentDTO.class
+        );
+
+        return response.getBody();
+    }
+
+    @GetMapping("/get-patient-by-patientid/{patientId}")
+    public PatientDTO getPatientByPatientId(@PathVariable Long patientId) {
+        ResponseEntity<PatientDTO> response = restTemplate.exchange(
+                "http://localhost:8080/patient-service/patients/" + patientId,
+                HttpMethod.GET,
+                null,
+                PatientDTO.class
+        );
+
+        return response.getBody();
     }
 }
