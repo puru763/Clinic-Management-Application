@@ -6,6 +6,8 @@ import com.ClinicManagementApplication.patientservice.entity.Appointment;
 import com.ClinicManagementApplication.patientservice.entity.Patient;
 import com.ClinicManagementApplication.patientservice.service.AppointmentService;
 import com.ClinicManagementApplication.patientservice.service.PatientService;
+import com.netflix.appinfo.InstanceInfo;
+import com.netflix.discovery.DiscoveryClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,11 +23,17 @@ public class PatientController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PatientController.class);
 
+
+
     @Autowired
     private PatientService patientService;
 
     @Autowired
     private AppointmentService appointmentService;
+
+
+
+
 
     @PostMapping("/register-patient")
     @ResponseStatus(HttpStatus.CREATED)
@@ -74,7 +82,7 @@ public class PatientController {
 
 
 
-    @GetMapping("/patients")
+    @GetMapping("/get-all-patients")
     public ResponseEntity<List<PatientDTO>> getAllPatients() {
         try {
             List<PatientDTO> patients = patientService.getAllPatients();

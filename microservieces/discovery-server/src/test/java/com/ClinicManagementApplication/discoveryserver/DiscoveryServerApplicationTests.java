@@ -1,10 +1,10 @@
-package com.ClinicManagementApplication.ServiceRegistry;
+package com.ClinicManagementApplication.discoveryserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServiceRegistryApplicationTests {
+class DiscoveryServerApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -8,6 +8,9 @@
         <option value="$PROJECT_DIR$/microservieces/doctor-service/pom.xml" />
         <option value="$PROJECT_DIR$/microservieces/patient-service/pom.xml" />
         <option value="$PROJECT_DIR$/microservieces/ServiceRegistry/pom.xml" />
+        <option value="$PROJECT_DIR$/microservieces/service-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/microservieces/ApiGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/microservieces/discovery-server/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
