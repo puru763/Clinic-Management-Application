@@ -10,6 +10,6 @@ import java.util.Optional;
 public interface AppointmentService {
     Appointment bookAppointment(Appointment appointment);
     List<AppointmentDTO> getAllAppointments();
-     Optional<AppointmentDTO> getAppointmentByAppointmentId(Long appointmentId);
+    Optional<AppointmentDTO> getAppointmentByAppointmentId(Long appointmentId);
 
-    }
+}

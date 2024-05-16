@@ -71,12 +71,11 @@ public class AppointmentServiceImpl implements AppointmentService {
         try {
             List<Appointment> appointments = appointmentRepository.findAll();
             return appointments.stream()
-                    .map(appointment -> new AppointmentDTO(appointment.getAppointmentId(), appointment.getPatientId(), appointment.getDoctorId(), appointment.getDescription()))
+                    .map(appointment -> new AppointmentDTO(appointment.getAppointmentId(), appointment.getPatient().getPatientId(), appointment.getDoctorId(), appointment.getDescription()))
                     .collect(Collectors.toList());
         } catch (Exception e) {
             LOGGER.error("Error occurred while fetching appointments: " + e.getMessage());
             throw new RuntimeException("Failed to fetch appointments");
         }
     }
-
 }
