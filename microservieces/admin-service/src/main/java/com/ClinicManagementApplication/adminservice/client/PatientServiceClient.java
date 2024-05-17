@@ -14,7 +14,6 @@ public interface PatientServiceClient {
     @GetMapping("/get-all-patients")
     List<PatientDTO> getAllPatients();
 
-
     @GetMapping("/get-patient-by-patientId/{patientId}")
     PatientDTO getPatientByPatientId(@PathVariable Long patientId);
 

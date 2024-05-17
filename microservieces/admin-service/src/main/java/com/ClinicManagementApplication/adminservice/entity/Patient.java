@@ -6,13 +6,21 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
+@Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "patient")
 public class Patient {
-    private Long userId;
+    @Id
+    private Long patientId;
+    private String name;
     private String mobileNumber;
     private String password;
-}
 
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL)
+    private List<Appointment> appointments;
+}

@@ -16,13 +16,14 @@ import lombok.Setter;
 public class Appointment {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-generate the appointmentId
     private Long appointmentId;
 
-    @OneToOne
-    @JoinColumn(name = "patient_id", unique = true)
-    private Patient patient;
-
     private Long doctorId;
-    private String description;
-}
+    private String details;
+    private String appointmentDate;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "patient_id", nullable = false)
+    private Patient patient;
+}

@@ -1,7 +1,9 @@
 package com.ClinicManagementApplication.adminservice.controller;
 
+import com.ClinicManagementApplication.adminservice.client.DoctorServiceClient;
 import com.ClinicManagementApplication.adminservice.client.PatientServiceClient;
 import com.ClinicManagementApplication.adminservice.dto.AppointmentDTO;
+import com.ClinicManagementApplication.adminservice.dto.DoctorDTO;
 import com.ClinicManagementApplication.adminservice.dto.PatientDTO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,9 +18,13 @@ import java.util.List;
 public class AdminController {
     private final PatientServiceClient patientServiceClient;
 
-    public AdminController(PatientServiceClient patientServiceClient) {
+    private final DoctorServiceClient doctorServiceClient;
+
+    public AdminController(PatientServiceClient patientServiceClient, DoctorServiceClient doctorServiceClient) {
         this.patientServiceClient = patientServiceClient;
+        this.doctorServiceClient = doctorServiceClient;
     }
+
 
     @GetMapping("/get-patient-by-patientId/{patientId}")
     public PatientDTO getPatientByPatientId(@PathVariable Long patientId) {
@@ -32,26 +38,23 @@ public class AdminController {
     }
 
 
-        @GetMapping("/get-all-appointments")
-        public List<AppointmentDTO> getAllAppointments() {
+    @GetMapping("/get-all-appointments")
+    public List<AppointmentDTO> getAllAppointments() {
             return patientServiceClient.getAllAppointments();
     }
 
 
+    @GetMapping("/get-doctor-by-doctorId/{doctorId}")
+    public DoctorDTO getDoctorBydoctorId(@PathVariable Long doctorId) {
+        return doctorServiceClient.getDoctorBydoctorId(doctorId);
+    }
+
+
+    @GetMapping("/get-all-doctors")
+    public List<DoctorDTO> getAllDoctors() {
+        return doctorServiceClient.getAllDoctors();
+    }
+
 }
 
 
-
-
-
-//    @GetMapping("/get-all-appointments")
-//    public List<AppointmentDTO> getAllAppointments() {
-//       return null;
-//
-//    }
-//
-//    @GetMapping("/get-appointment-by-appointmentid/{appointmentId}")
-//    public AppointmentDTO getAppointmentByAppointmentId(@PathVariable Long appointmentId) {
-//        return null;
-//    }
-//

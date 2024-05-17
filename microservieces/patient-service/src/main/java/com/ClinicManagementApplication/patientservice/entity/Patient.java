@@ -1,18 +1,14 @@
 package com.ClinicManagementApplication.patientservice.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import jakarta.persistence.*;
-import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
-
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
+import java.util.List;
 
 @Entity
 @Getter
@@ -25,13 +21,16 @@ public class Patient {
     @Id
     private Long patientId;
 
+    @NotNull
     @Size(min = 10, max = 10)
+    @Column(unique = true)
     private String mobileNumber;
 
+    @NotNull
     private String password;
 
-    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonIgnore
-    private Appointment appointment;
+    private List<Appointment> appointments;
 
 }

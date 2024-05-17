@@ -1,4 +1,4 @@
-package com.ClinicManagementApplication.doctorservice.entity;
+package com.ClinicManagementApplication.doctorservice.dto;
 
 import lombok.Getter;
 import lombok.Setter;

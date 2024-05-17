@@ -13,13 +13,7 @@ import java.util.Optional;
 @Repository
 
 public interface PatientRepository extends JpaRepository<Patient, Long> {
-
     Optional<Patient> findByMobileNumber(String mobileNumber);
-
-    List<Patient> findAll();
-
-    @Query("SELECT p FROM Patient p JOIN FETCH p.appointments WHERE p.patientId = :patientId")
-    Optional<Patient> findPatientWithAppointments(@Param("patientId") Long patientId);
-
+    Optional<Patient> findById(Long  patientId);
 
 }

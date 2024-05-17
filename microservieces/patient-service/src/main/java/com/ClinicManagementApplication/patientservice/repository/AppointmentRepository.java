@@ -11,10 +11,7 @@ import java.util.Optional;
 @Repository
 public interface AppointmentRepository extends JpaRepository<Appointment, Long> {
 
-    boolean existsByPatientId(Long patientId);
 
-    boolean existsByPatient(Patient patient);
 
-    List<Appointment> findByPatientId(Long patientId);
 }
 
