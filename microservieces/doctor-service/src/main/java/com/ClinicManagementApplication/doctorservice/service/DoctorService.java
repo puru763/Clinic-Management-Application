@@ -1,4 +1,2 @@
-package com.ClinicManagementApplication.doctorservice.service;
-
-public class DoctorService {
+package com.ClinicManagementApplication.doctorservice.service;public interface DoctorService {
 }
