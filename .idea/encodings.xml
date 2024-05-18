@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/microservieces/ServiceRegistry/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservieces/admin-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservieces/admin-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservieces/api-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservieces/discovery-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservieces/doctor-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservieces/doctor-service/src/main/resources" charset="UTF-8" />

@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/microservieces/service-registry/pom.xml" />
         <option value="$PROJECT_DIR$/microservieces/ApiGateway/pom.xml" />
         <option value="$PROJECT_DIR$/microservieces/discovery-server/pom.xml" />
+        <option value="$PROJECT_DIR$/microservieces/api-gateway/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
