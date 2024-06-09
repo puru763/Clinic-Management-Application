@@ -17,13 +17,14 @@ import java.util.List;
 @RequestMapping("api/v1/doctor")
 public class DoctorController {
 
-    @Autowired
-    DoctorRepository doctorRepository;
 
+    private final DoctorRepository doctorRepository;
     private final DoctorService doctorService;
 
+
     @Autowired
-    public DoctorController(DoctorService doctorService) {
+    public DoctorController(DoctorRepository doctorRepository, DoctorService doctorService) {
+        this.doctorRepository = doctorRepository;
         this.doctorService = doctorService;
     }
 

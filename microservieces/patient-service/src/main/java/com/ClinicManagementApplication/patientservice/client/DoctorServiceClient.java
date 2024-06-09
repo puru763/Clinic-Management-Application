@@ -1,6 +1,5 @@
 package com.ClinicManagementApplication.patientservice.client;
 
-
 import com.ClinicManagementApplication.patientservice.entity.Appointment;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;

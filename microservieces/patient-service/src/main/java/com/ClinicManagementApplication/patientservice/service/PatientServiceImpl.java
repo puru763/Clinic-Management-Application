@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.validation.BindingResult;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,20 +18,18 @@ import java.util.Random;
 import java.util.stream.Collectors;
 
 @Service
-public class PatientServiceImpl implements PatientService {
+public  class PatientServiceImpl implements PatientService {
 
-    @Autowired
-    private PatientRepository patientRepository;
+    private final PatientRepository patientRepository;
     private static final Logger LOGGER = LoggerFactory.getLogger(PatientServiceImpl.class);
 
-    @Autowired
-    private DoctorServiceClient doctorFeignClient;
+    private final DoctorServiceClient doctorFeignClient;
 
+    @Autowired
     public PatientServiceImpl(PatientRepository patientRepository, DoctorServiceClient doctorFeignClient) {
         this.patientRepository = patientRepository;
         this.doctorFeignClient = doctorFeignClient;
     }
-
 
     @Override
     public Appointment bookAppointment(Long patientId, Long doctorId, Appointment appointment) {
@@ -51,14 +50,14 @@ public class PatientServiceImpl implements PatientService {
             throw new RuntimeException("Failed to add appointment");
         }
     }
+
     private Long generateUniqueAppointId() {
         Random random = new Random();
         return random.nextInt(90000000) + 10000000L;
     }
 
-
     @Override
-    public Patient registerPatient(Patient patient) {
+    public Patient registerPatient(Patient patient, BindingResult result) {
         try {
             Optional<Patient> existingPatient = patientRepository.findByMobileNumber(patient.getMobileNumber());
 
@@ -75,20 +74,21 @@ public class PatientServiceImpl implements PatientService {
             throw new RuntimeException("Failed to register patient. Please try again.", e);
         }
     }
+
     @Override
     public Optional<Patient> findByMobileNumber(String mobileNumber) {
         return patientRepository.findByMobileNumber(mobileNumber);
     }
+
     @Override
     public Appointment bookAppointment(Long patientId, Appointment appointment) {
         return null;
     }
+
     private Long generateUniquePatientId() {
         Random random = new Random();
         return random.nextInt(90000000) + 10000000L;
     }
-
-
 
     @Override
     public PatientDTO getPatientByPatientId(Long patientId) {
@@ -107,18 +107,18 @@ public class PatientServiceImpl implements PatientService {
         }
     }
 
-
-
     @Override
     public List<PatientDTO> getAllPatients() {
         try {
             return patientRepository.findAll().stream()
-                    .map(patient -> new PatientDTO(patient.getPatientId(), patient.getMobileNumber(), patient.getPassword(),patient.getAppointments()))
+                    .map(patient -> new PatientDTO(patient.getPatientId(), patient.getMobileNumber(), patient.getPassword(), patient.getAppointments()))
                     .collect(Collectors.toList());
         } catch (Exception e) {
             LOGGER.error("An error occurred while retrieving all patients", e);
             throw new RuntimeException("An error occurred while retrieving patients", e);
         }
     }
+
+
 
 }
